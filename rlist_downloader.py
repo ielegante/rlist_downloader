@@ -10,7 +10,7 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import json
 
-uri = "mongodb+srv://rlist_sg:3T9YzG0CinfcQkuy@readinglist.9bnpotz.mongodb.net/?retryWrites=true&w=majority&appName=ReadingList"
+uri = "mongodb+srv://<USERNAME>:<PASSWORD>@readinglist.9bnpotz.mongodb.net/?retryWrites=true&w=majority&appName=ReadingList"
 citation_regex = r'(\[(\d{4})\]\s(\d+\s\w+\s\d+|\w+\s\d+))'
 
 # Create a new client and connect to the server
@@ -77,8 +77,6 @@ cases_to_check = [(entry['title'], entry['citation'], entry['url']) for entry in
 case_names = [entry[0] for entry in cases_to_check]
 case_citations = [entry[1] for entry in cases_to_check]
 case_urls = [entry[2] for entry in cases_to_check]
-
-
 
 def file_hash(filepath):
     """Generate a SHA-256 hash for the given file."""
