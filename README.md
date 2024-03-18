@@ -1,5 +1,5 @@
 # rlist_downloader
-This script is the Python implementation of a program that processes law degree reading lists.
+This script is the Python implementation of a program that processes Singapore law degree reading lists.
 
 Here is what it does:
 1. Extracts all citations from the reading list.
